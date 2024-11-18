@@ -1,0 +1,321 @@
+/*Esto elimina los márgenes y el relleno (padding) predeterminados de todos los elementos en la página, haciendo que todos inicien en cero para facilitar la personalización.*/
+* {
+  margin: 0px;
+  padding: 0;
+}
+/*Los enlaces (a) no tendrán subrayado y tendrán un color gris claro.
+Las listas (ul) no mostrarán el estilo de puntos o números predeterminados.
+*/
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  margin-right: 5px;
+}
+/*Cambia el color de fondo a amarillo claro cuando se pasa el ratón por encima de un enlace dentro del contenedor .Texto.*/
+.Texto a:hover {
+  background-color: #fdd06d;
+}
+
+/*Barra de ofertas*/
+.Barra_Ofertas {
+  background-color: #222222;
+  color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 90px;
+}
+
+.Barra_Ofertas a {
+  color: #f3f3f3;
+}
+
+/*Barra de ofertas (parte del idioma)*/
+.Idioma {
+  display: flex;
+  gap: 10px;
+}
+
+/*Barra del menú*/
+.Barra_Menu {
+  background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+/*Los elementos del menú están en fila y separados entre sí por 20px. El texto de cada enlace del menú tiene un tamaño de fuente de 13px.*/
+.Menu {
+  display: flex;
+  gap: 20px;
+}
+
+.Menu li a {
+  font-size: 13px;
+}
+
+/*Texto que va sobre la imagen*/
+.Texto {
+  background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-repeat: no-repeat;
+  height: 409px;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  /* me lo acomoda en el eje Y */
+  align-items: center;
+  padding: 1px;
+  text-align: center;
+}
+
+.Texto h1 {
+  background-color: #ffffff;
+  display: inline;
+  padding: 10px;
+  margin-right: 22px;
+  border-radius: 10px;
+}
+
+.Texto p {
+  margin: 20px;
+  text-align: center;
+}
+
+/*Botón de comederos*/
+.Texto a {
+  background-color: #f0a83e;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+/*Productos destacados*/
+.Productos {
+  text-align: center;
+  color: #3c2313;
+  font-size: 20px;
+}
+
+.Productos a {
+  color: black;
+  font-size: 15px;
+}
+
+/*Pone los productos en fila*/
+.Productos ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.Productos img {
+  margin-top: 30px;
+}
+
+/*Tarjetas de los productos que se venden */
+.Tarjeta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Tarjeta p {
+  text-align: center;
+}
+
+.Precio {
+  color: #f0a83e;
+}
+
+.Tarjeta_1 {
+  background-color: #fbfaf6;
+  height: 312px;
+  width: 265px;
+}
+
+.Tarjeta_2 {
+  background-color: #fbfaf6;
+  height: 312px;
+  width: 265px;
+}
+
+.Tarjeta_3 {
+  background-color: #fbfaf6;
+  height: 312px;
+  width: 265px;
+}
+
+/*Pie de pagina*/
+.Suscripcion {
+  background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.Suscripcion h2 {
+  margin-top: 15px;
+  color: #f3f3f3;
+}
+
+.Ingresar {
+  display: flex;
+  gap: 20px;
+}
+
+.Ingresar li a {
+  background-color: #3c2313;
+  border-radius: 15px;
+  width: 70px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.Ingresar li input {
+  border-radius: 15px;
+  width: 271px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.Pie_Pagina {
+  background-color: #3c2313;
+  color: #ffffff;
+}
+
+.Derechos {
+  background-color: #222222;
+  color: #ffffff;
+  height: 20px;
+  text-align: center;
+}
+
+.Informacion {
+  padding: 30px;
+}
+
+.Informacion p {
+  color: #8a8787;
+}
+
+.Localidad {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Telefono {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Correo {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/*Parte del formulario*/
+
+.Formulario {
+  display: flex;
+  justify-content: center;
+  margin: 40px 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Formulario h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #3c2313;
+}
+
+.Formulario .Columna {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 340px;
+}
+
+/*Acomodo los input de nombre y fecha*/
+.Formulario .Columna > input {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #3c2313;
+}
+
+.Formulario .Boton {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Formulario .Boton > a {
+  background-color: #f0a83e;
+  border-radius: 15px;
+  height: 34px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Formulario .Boton > p {
+  background-color: #8a8787;
+  border-radius: 15px;
+  height: 34px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*Ajustes específicos para pantallas pequeñas, permitiendo que los elementos del menú, productos y tarjetas cambien de disposición en dispositivos móviles para mejorar la usabilidad y legibilidad.*/
+@media (max-width: 580px) {
+  .Productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Menu {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .Menu {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .Derechos {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Tarjeta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
