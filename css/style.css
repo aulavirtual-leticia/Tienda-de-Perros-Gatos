@@ -293,23 +293,23 @@ i {
 /*Ajustes específicos para pantallas pequeñas, permitiendo que los elementos del menú, productos y tarjetas cambien de disposición en dispositivos móviles para mejorar la usabilidad y legibilidad.*/
 @media (max-width: 580px) {
   .Productos {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /*Cambia la disposición de los elementos dentro de un contenedor con display: flex para que se apilen verticalmente (en lugar de horizontalmente).*/
+    align-items: center; /*Alinea los elementos en el centro del contenedor.*/
   }
 
   .Menu {
-    margin-top: 15px;
+    margin-top: 15px; /**Agrega un margen superior de 15 píxeles.*/
   }
 }
 
 @media (max-width: 450px) {
   .Menu {
-    flex-direction: column;
+    flex-direction: column; /*Cambia la disposición a una columna.*/
     margin-top: 15px;
   }
 
   .Derechos {
-    font-size: 13px;
+    font-size: 13px; /*Reduce el tamaño de la fuente a 13 píxeles para adaptarse a pantallas más pequeñas.*/
   }
 }
 
